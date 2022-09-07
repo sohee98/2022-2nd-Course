@@ -6,7 +6,7 @@
 
 ## Advanced Computer Vision
 
-
+> https://view.kentech.ac.kr/cfe31ea9-7b0c-4518-9694-146c8d645425
 
 
 

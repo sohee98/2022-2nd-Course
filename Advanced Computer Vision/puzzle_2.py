@@ -48,11 +48,12 @@ def check_same(a, b):
   4.4. What are the rules for allowing broadcasting?
 '''
 ### Close all images ###
-# close_image(0)
+close_image(0)
 
 ### Load image ###
-# im = data.cat() / 255.  # Why do we divide image by '255.'?
-# gt1 = np.load('samples/puzzle2/gt1.npy')
+im = data.cat() / 255.  # Why do we divide image by '255.'?
+gt1 = np.load('samples/puzzle2/gt1.npy')
+# pdb.set_trace()
 
 ### Check the shape of 'im' ###
 # print("Shape of 'im':", im.shape)  # What is the shape of 'im'? Why are there three channels?
@@ -102,7 +103,6 @@ def check_same(a, b):
 # close_image(0)
 
 # im2 = im[y1:y2, x1:x2]
-# im2 = im[65:165, 120:220]
 # print("Shape of 'im2':", im2.shape)
 
 ### Two different resizing function from scikit-image library ###
