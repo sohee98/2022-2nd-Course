@@ -44,6 +44,19 @@ if __name__ == '__main__':
 
     '''
         Q. Please discuss the mechanism of each interpolation. What are the pros and cons?
+        	cv.INTER_CUBIC:  0.001699686050415039
+			cv.INTER_LANCZOS4:  0.005689382553100586
+			cv.INTER_AREA:  0.00046753883361816406
+			cv.INTER_LINEAR:  0.0006177425384521484
+			cv.INTER_NEAREST:  0.00051116943359375
+
+			cv.INTER_CUBIC:  a bicubic interpolation over 4x4 pixel neighborhood - use 16 pixels. slower than LINEAR but better quality
+			cv.INTER_LANCZOS4:  a Lanczos interpolation over 8x8 pixel neighborhood - use 64 pixels. more complicated, slow but high quality
+			cv.INTER_AREA:  resampling using pixel area relation. preferred method for image decimation.  similar to NEAREST - fastest. 
+			cv.INTER_LINEAR:  a bilinear interpolation (used by default) - fast, good quality
+			cv.INTER_NEAREST:   a nearest-neighbor interpolation - fast but low quality 
+
+
     '''
 
     pdb.set_trace()

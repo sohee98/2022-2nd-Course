@@ -48,12 +48,29 @@ if __name__ == '__main__':
        				 [ 1.00000000e+00,  6.12323400e-17, -2.92924863e-15]])
 
         Q. Please discuss the meaning of inverse matrix.
-        	output reverse affine transformation. third column 2 values are changed.
+        	output reverse affine transformation. [0][1],[1][0] / [0][2],[1][2] values are exchanged each.
 
         Q. Please try different rotations, and repeat the process.
-           RotateMatrix2 = cv.getRotationMatrix2D(center=(Img.shape[1]/2, Img.shape[0]/2),angle=180,scale=1)
-           RotImg3 = cv.warpAffine(Img, RotateMatrix2, (Img.shape[0], Img.shape[1]))
-           figNum+=1; plt.figure(figNum); plt.imshow(cv.cvtColor(RotImg3, cv.COLOR_BGR2RGB)); plt.ion(); plt.show();
+           RotateMatrix10 = cv.getRotationMatrix2D(center=(Img.shape[1]/2, Img.shape[0]/2),angle=10,scale=1)
+           RotateMatrix20 = cv.getRotationMatrix2D(center=(Img.shape[1]/2, Img.shape[0]/2),angle=20,scale=1)
+           RotateMatrix30 = cv.getRotationMatrix2D(center=(Img.shape[1]/2, Img.shape[0]/2),angle=30,scale=1)
+
+           RotImg10 = cv.warpAffine(Img, RotateMatrix10, (Img.shape[0], Img.shape[1]))
+           RotImg20 = cv.warpAffine(Img, RotateMatrix20, (Img.shape[0], Img.shape[1]))
+           figNum+=1; plt.figure(figNum); plt.imshow(cv.cvtColor(RotImg10, cv.COLOR_BGR2RGB)); plt.ion(); plt.show();
+           figNum+=1; plt.figure(figNum); plt.imshow(cv.cvtColor(RotImg20, cv.COLOR_BGR2RGB)); plt.ion(); plt.show();
+
+            (Pdb) print(RotateMatrix10)
+                [[  0.98480775   0.17364818 -40.56471825]
+                 [ -0.17364818   0.98480775  48.34314871]]
+            (Pdb) print(RotateMatrix20) 
+                [[  0.93969262   0.34202014 -72.11846761]
+                 [ -0.34202014   0.93969262 102.99584577]]
+            (Pdb) print(RotateMatrix30)
+                [[  0.8660254    0.5        -93.70250337]
+                 [ -0.5          0.8660254  162.29749663]]
+
+
 
     '''
 
