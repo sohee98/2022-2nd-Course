@@ -1,0 +1,6 @@
+﻿Reprojection error 1 : (prof.Lee)
+total error: 0.04550468552874256
+
+Reprojection error 2 : 
+total error: 0.03114963774090363
+
