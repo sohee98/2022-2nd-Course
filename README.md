@@ -9,7 +9,7 @@
   | Week 2 (22.09.08)  | Kappa-A Programming Framework for Serverless Computing       | [Link](https://docs.google.com/presentation/d/1aA12ciK7-HS2VAyBbgx_lIxT39fLgBdT7OEoKc8i8v8/edit?usp=sharing) |
   | Week 9 (22.10.27)  | Interference between I/O and MPI Traffic on Fat-tree Networks | [Link](https://docs.google.com/presentation/d/158OAsaoOxrrR3lLrgYGWEQytzpz_MzWyhbZA0GRAWPw/edit?usp=share_link) |
   | Week 13 (22.11.22) | Ernest: Efficient Performance Prediction for Large-Scale Advanced Analytics | [Link](https://docs.google.com/presentation/d/1VM2LCq2WsB9XlbHU1MqUsJlJBBOst2WSr-agsHqtdng/edit?usp=sharing) |
-  | Week 14 (22.12.06) | ElasticTree: Saving Energy in Data Center Networks           |                                                              |
+  | Week 14 (22.12.06) | ElasticTree: Saving Energy in Data Center Networks           | [Link](https://docs.google.com/presentation/d/1x7VVWHhQcFnYmoOU83D55QsTVmC6TCpy8jO2HmUxCII/edit?usp=share_link) |
 
   - 3 Question
     - What is problem?
@@ -30,7 +30,9 @@
   | -------- | ---------------------------------- |
   | 22.11.11 | Spatial Transformer Network        |
   | 22.11.25 | Contrastive learning               |
-  | 22.12.02 | Unsupervised SfM in Dynamic Scenes |
+  | 22.12.06 | Unsupervised SfM in Dynamic Scenes |
+
+- **Research Proposal** : 22.12.13
 
 
 
